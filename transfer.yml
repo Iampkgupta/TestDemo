@@ -1,6 +1,5 @@
 ---
 - hosts: 10.13.109.35
-- git:
-    repo: 'https://github.com/Iampkgupta/TestDemo.git/viewer.jnlp'
-    dest: /tmp/new
-    version: release-0.22
+  repo: 'https://github.com/Iampkgupta/TestDemo.git/viewer.jnlp'
+  dest: '/tmp/new'
+  version: release-0.22
