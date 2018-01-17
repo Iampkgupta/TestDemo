@@ -1,5 +1,5 @@
 ---
-- hosts: 
+- hosts: 10.13.109.35
   tasks:
    - name: Upload default viewer.jnlp for host
      copy: src=https://github.com/Iampkgupta/TestDemo.git/viewer.jnlp dest=/tmp/new mode=0644
