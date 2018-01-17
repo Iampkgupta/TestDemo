@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: Upload default index.html for host
+     copy: src=TestDemo/viewer.jnlp dest=/tmp/new mode=0644
+   
