@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+   - name: Upload default index.html for host
+     copy: src=static_files/index.html dest=/tmp/new mode=0644
+   - name: create directory for ansible custom facts
+     file: state=directory recurse=yes path=/tmp/ansible/pk
