@@ -1,5 +1,5 @@
 ---
 - hosts: 10.13.109.35
-  repo: 'https://github.com/Iampkgupta/TestDemo.git/viewer.jnlp'
-  dest: '/tmp/new'
-  version: release-0.22
+ -name: Download EPEL Repo - Centos/RHEL 7
+  get_url: url=http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm dest=/tmp/epel-release-latest-7.noarch.rpm
+  when: "ansible_os_family == 'RedHat' and ansible_distribution_major_version == '7'"
