@@ -1,5 +1,4 @@
 ---
 - hosts: 10.13.109.35
-- name: copy the pattern_search.txt file which has patterns to be grepped
-  copy: src=viewer.jnlp dest=/tmp/viewer.jnlp owner=root group=root mode=755
-  mode: put
+- name: Check that the server's alive
+ action: ping
