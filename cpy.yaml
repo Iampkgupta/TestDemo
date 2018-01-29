@@ -1,0 +1,5 @@
+---
+- hosts: 10.13.109.35
+  tasks:
+   - name: copy file
+     copy: src=https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp
