@@ -2,10 +2,9 @@
 - hosts: 10.13.109.35
   user: root
   vars:
-   motd_welcome: 'Welcome to Ansible playboot\n Hi, This is YAML\n'
+    motd_welcome: 'Welcome to Ansible playboot\n Hi, This is YAML\n'
   tasks:
-   - name: sample
+   - name: sample motd
      copy:
-     dest: /etc/motd
-     content: "{{ motd_welcome }}" 
-  
+      dest: /etc/motd
+      content: "{{ motd_welcome }}"
