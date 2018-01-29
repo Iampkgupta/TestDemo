@@ -1,5 +1,5 @@
 ---
-
+- hosts:10.13.109.35
 - name: Install Java 8 using YUM.
   yum:
     name: "{{java.VERSION}}"
