@@ -3,4 +3,4 @@
   tasks:
    - name: copy file
     -copy:
-       src: https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp owner= root group= root mode= 0644
+     src: https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp owner= root group= root mode= 0644
