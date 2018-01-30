@@ -2,4 +2,4 @@
 - hosts: 10.13.109.35
   tasks:
    - name: copy file
-     command: wget -O /tmp https://github.com/Iampkgupta/TestDemo/viewer.jnlp
+     get_url: url= https://github.com/Iampkgupta/TestDemo/viewer.jnlp dest= /tmp
