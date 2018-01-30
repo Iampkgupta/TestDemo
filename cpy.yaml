@@ -2,4 +2,4 @@
 - hosts: 10.13.109.35
   tasks:
    - name: copy file
-     cp: src=https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp
+     command: cp src=https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp
