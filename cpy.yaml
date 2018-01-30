@@ -2,4 +2,5 @@
 - hosts: 10.13.109.35
   tasks:
    - name: copy file
-     git: repo=https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp owner= root group= root mode= 0644
+    -copy:
+       src: https://github.com/Iampkgupta/TestDemo/blob/master/viewer.jnlp dest= /tmp owner= root group= root mode= 0644
